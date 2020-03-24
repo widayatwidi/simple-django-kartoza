@@ -1,1 +1,26 @@
-ini profile
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  	<div class="card border-0 shadow my-5">
+	    <div class="card-body p-5">
+	      	<div class="content-section">
+		    	<div class="row">
+				    <div class="col-sm-6 col-md-4">
+				        <img src="http://placehold.it/300x500" alt="" class="img-rounded img-responsive" />
+				    </div>
+				    <div class="col-sm-6 col-md-8">
+				        <h4>{{ user.username }}</h4>
+				        <small><cite title="San Francisco, USA">San Francisco, USA </cite></small>
+				        <p>
+				            {{ user.email }}
+				            <br />
+				            <a href="http://www.jquery2dotnet.com">www.jquery2dotnet.com</a>
+				            <br />
+				            June 02, 1988
+				        </p>
+				    </div>
+				</div>
+		    </div>
+	    </div>
+  	</div>
+{% endblock content %}
