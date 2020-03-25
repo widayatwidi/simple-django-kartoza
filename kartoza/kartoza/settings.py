@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
+    'maps.apps.MapsConfig',
     'crispy_forms',
     'easy_maps',
     'django.contrib.admin',
