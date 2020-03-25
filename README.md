@@ -26,3 +26,8 @@ Requirement packages :
     </ul>
   </li>
 </ul>
+
+Run (checked in kartoza folder project):
+```python
+python manage.py runserver
+```
