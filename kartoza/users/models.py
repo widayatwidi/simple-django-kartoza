@@ -9,7 +9,8 @@ class Profile(models.Model):
 	phone = models.CharField(max_length=30, blank=True)
 	location = models.CharField(max_length=30, blank=True)
 	homeAddress = models.TextField(max_length=500, blank=True)
-	# position = GeopositionField(blank=True)
+	# address = map_fields.AddressField(max_length=200)
+    # geolocation = map_fields.GeoLocationField()
 
 	def __str__(self):
 		return f'{self.user.username} Profile'

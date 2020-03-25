@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'crispy_forms',
-    'geoposition',
+    'django_google_maps',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,3 +134,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'user-profile'
 LOGIN_URL = 'login'
+
+GEOPOSITION_GOOGLE_MAPS_API_KEY = 'AIzaSyCXZywu_o2VS85v5MdxqVoPO6l98L7IpX8'
+
+GOOGLE_MAPS_API_KEY = 'AIzaSyCXZywu_o2VS85v5MdxqVoPO6l98L7IpX8'

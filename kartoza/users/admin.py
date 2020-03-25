@@ -56,3 +56,4 @@ class LogEntryAdmin(admin.ModelAdmin):
         return mark_safe(link)
     object_link.admin_order_field = "object_repr"
     object_link.short_description = "object"
+
